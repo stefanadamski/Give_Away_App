@@ -1,4 +1,4 @@
-import logo from "../images/Form-Hero-Image.jpg";
+import logo from "../assets/Form-Hero-Image.jpg";
 import '../css/Home.css';
 
 function Home() {

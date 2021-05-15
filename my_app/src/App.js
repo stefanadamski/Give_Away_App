@@ -1,6 +1,7 @@
 import React from "react";
-import './css/Home.css';
 import Home from './components/Home.js'
+import Login from "./components/Login";
+import Register from "./components/Register";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,7 +13,8 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/location" component={Location} />
+          <Route path="/login" component={Login}/>
+          <Route path="/register" component={Register}/>
         </Switch>
       </Router>
   );
