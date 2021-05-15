@@ -1,5 +1,5 @@
 import logo from "../assets/Form-Hero-Image.jpg";
-import '../css/Home.css';
+import '../css/home.css';
 
 function Home() {
     return (
