@@ -1,8 +1,7 @@
-@import 'settings/_colors';
-@import 'settings/_fonts';
-
+@import 'settings/_colors', 'settings/_fonts', 'settings/_reset';
 
 body {
+  margin: 0;
   font-family: $font-base;
 }
 
