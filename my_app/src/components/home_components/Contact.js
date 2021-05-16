@@ -8,15 +8,15 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (emailAddress.length < 5 || emailAddress.indexOf("@") === -1) {
-            alert("Please enter a valid e-mail address");
+            alert("Wpisz poprawny adres e-mail!");
             return false;
         }
         if (name.length < 2) {
-            alert("Yor name is to short");
+            alert("Twoje imię jest za krótkie!");
             return false;
         }
         if (message.length < 5) {
-            alert("Write something more");
+            alert("Napisz coś więcej!");
             return false;
         }
         else {
