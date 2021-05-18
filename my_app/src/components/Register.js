@@ -34,7 +34,7 @@ const Register = () => {
                         <input type="email"
                                className="inputStyle"
                                value={email}
-                               placeholder="john@shy.com"
+                               placeholder="john@register.com"
                                onChange={(e) => setEmail(e.target.value)}
                         />
                         <label>Password</label>

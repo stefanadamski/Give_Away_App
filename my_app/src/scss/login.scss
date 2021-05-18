@@ -1,0 +1,23 @@
+@import 'settings/_colors', 'settings/_fonts', 'settings/_reset';
+
+.login_container {
+  .login_title {
+    font-size: 40px;
+    font-family: $font-alt;
+  }
+  .login_decoration {
+    background-image: url("../assets/Decoration.svg");
+    background-size: cover;
+    background-position: center;
+    width: 253px;
+    height: 33px;
+  }
+  .login_form {
+    .input_style {
+
+    }
+    .login_button {
+
+    }
+  }
+}
