@@ -21,14 +21,12 @@ const Contact = () => {
         }
         else {
             window.location.href = window.location.origin + "/login";
-            sessionStorage.setItem('emailAddress', emailAddress.value);
-            sessionStorage.setItem('name', name.value);
         }
     }
     return (
         <div>
             <h1> Skontaktuj się z nami </h1>
-            <div className="contact_form">
+            <div className="contactForm">
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <label>Wpisz swoje imię</label>
                     <input type="text"

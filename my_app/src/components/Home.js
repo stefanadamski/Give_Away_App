@@ -1,25 +1,23 @@
-import logo from "../assets/Form-Hero-Image.jpg";
-import ThreeColumns from "./home_components/ThreeColumns";
-import Contact from "./home_components/Contact";
-import AboutUs from "./home_components/AboutUs";
-import '../scss/home.scss';
+import ThreeColumns from "./homeComponents/ThreeColumns/ThreeColumns";
+import Contact from "./homeComponents/Contact/Contact";
+import AboutUs from "./homeComponents/AboutUs/AboutUs";
 import Login from "./Login";
+import Header from "./Header";
+import EasySteps from "./homeComponents/EasySteps/EasySteps";
+import Help from "./homeComponents/Help/Help";
+import '../scss/Home.scss';
 
 function Home() {
-    const handleClick = (e) => {
-        e.preventDefault();
-        window.location.href = window.location.origin + "/login";
-    }
     return (
-        <div className="home_container">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <button onClick={(e) => handleClick(e)}> Login </button>
-            </header>
+        <div className="homeContainer">
+            <Header/>
+            <ThreeColumns/>
+            <EasySteps/>
             <AboutUs/>
+            <Help/>
             <Contact/>
             <Login/>
-            <ThreeColumns/>
+            <footer> </footer>
         </div>
     );
 }
