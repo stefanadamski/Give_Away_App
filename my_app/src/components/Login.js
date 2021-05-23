@@ -16,20 +16,18 @@ const Login = () => {
         }
         else {
             window.location.href = window.location.origin + "/home";
-            sessionStorage.setItem('email', loginEmail.value);
-            sessionStorage.setItem('password', loginPassword.value);
         }
     }
     return (
         <>
-            <div className='login_container'>
-                <div className='login_title'> Zaloguj się </div>
-                <div className='login_decoration'> </div>
-                <div className="login_form">
+            <div className='loginContainer'>
+                <div className='loginTitle'> Zaloguj się </div>
+                <div className='loginDecoration'> </div>
+                <div className="loginForm">
                     <form onSubmit={(e) => handleSubmit(e)}>
                         <label>Email</label>
                         <input type="email"
-                               className="input_style"
+                               className="inputStyle"
                                value={loginEmail}
                                placeholder="john@login.com"
                                onChange={(e) => setLoginEmail(e.target.value)}
@@ -38,11 +36,11 @@ const Login = () => {
                         <input
                             type="password"
                             placeholder="**********"
-                            className="input_style"
+                            className="inputStyle"
                             value={loginPassword}
                             onChange={(e) => setLoginPassword(e.target.value)}
                         />
-                        <button className="login_button"> Register </button>
+                        <button className="loginButton"> Register </button>
                     </form>
                 </div>
             </div>

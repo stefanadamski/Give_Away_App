@@ -6,9 +6,9 @@ const Logout = () => {
         window.location.href = window.location.origin + "/home";
     }
     return (
-        <div className='logout_container'>
+        <div className='logoutContainer'>
             <h1> Wylogowanie nastąpiło pomyślnie! </h1>
-            <div className='logout_decoration'/>
+            <div className='logoutDecoration'/>
             <button onClick={handleReturnToMainPage}> Strona główna </button>
         </div>
     );

@@ -21,14 +21,12 @@ const Register = () => {
         }
         else {
             window.location.href = window.location.origin + "/login";
-            sessionStorage.setItem('email', email.value);
-            sessionStorage.setItem('password', password.value);
         }
     }
     return (
         <>
-            <div className='register_container'>
-                <div className="register_form">
+            <div className='registerContainer'>
+                <div className="registerForm">
                     <form onSubmit={(e) => handleSubmit(e)}>
                         <label>Email</label>
                         <input type="email"
@@ -53,7 +51,7 @@ const Register = () => {
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />
-                        <button className="register_button"> Register </button>
+                        <button className="registerButton"> Register </button>
                     </form>
                 </div>
             </div>

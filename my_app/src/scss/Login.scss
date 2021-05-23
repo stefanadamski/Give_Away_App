@@ -1,24 +1,24 @@
-@import 'settings/_colors', 'settings/_fonts', 'settings/_reset';
+@import 'main.scss';
 
-.login_container {
-  .login_title {
+.loginContainer {
+  .loginTitle {
     width: 190px;
     height: 55px;
     font-size: 40px;
     font-family: $font-alt;
   }
-  .login_decoration {
+  .loginDecoration {
     background-image: url("../components/homeComponents/AboutUs/Decoration.svg");
     background-size: cover;
     background-position: center;
     width: 253px;
     height: 33px;
   }
-  .login_form {
-    .input_style {
+  .loginForm {
+    .inputStyle {
 
     }
-    .login_button {
+    .loginButton {
 
     }
   }
