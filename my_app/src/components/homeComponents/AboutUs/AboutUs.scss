@@ -1,39 +1,48 @@
-@import '../../../scss/settings/colors', '../../../scss/settings/fonts', '../../../scss/settings/reset';
+@import '../../../scss/main';
 
 .aboutContainer {
   display: flex;
   width: 100vw;
+  height: 700px;
   color: $color5;
   .aboutLeft {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 935px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color1;
+    width: 50vw;
     .aboutTitle {
       font-size: 30px;
+      margin-top: 100px;
+      padding: 30px;
     }
     .aboutDecoration {
       background-image: url("Decoration.svg");
       background-size: cover;
       background-position: center;
-      width: 200px;
-      height: 70px;
+      width: 253px;
+      height: 33px;
     }
     .aboutDescription {
-      font-size: 20px;
+      font-size: 18px;
+      width: 650px;
+      margin: 50px;
     }
     .aboutSign {
       background-image: url("Signature.svg");
       background-size: cover;
       background-position: center;
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 112px;
+      position: relative;
+      left: 200px;
     }
   }
   .aboutRight {
     background-image: url("People.jpg");
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 50vw;
   }
 }

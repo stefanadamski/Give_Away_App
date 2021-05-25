@@ -12,9 +12,7 @@ const AboutUs = () => {
                     lentil turnip greens parsnip. </div>
                 <div className='aboutSign'> </div>
             </div>
-            <div className="aboutRight">
-                <div className='aboutPhoto'> </div>
-            </div>
+            <div className="aboutRight"> </div>
         </div>
     );
 };
