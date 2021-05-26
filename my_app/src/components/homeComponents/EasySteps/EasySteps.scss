@@ -1,0 +1,68 @@
+@import '../../../scss/main';
+
+.stepsContainer {
+  font-family: $font-alt;
+  color: $color5;
+  margin: 30px;
+  .stepsTitle{
+    margin: 30px;
+  }
+  .stepsDecoration {
+    background-image: url("Decoration.svg");
+    background-size: cover;
+    background-position: center;
+    width: 253px;
+    height: 33px;
+  }
+  .giveAwayButton {
+    text-transform: uppercase;
+    font-size: 36px;
+    width: 310px;
+    height: 120px;
+    background-color: white;
+    border: 1px solid $color5;
+  }
+  .stepsElements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color1;
+    padding: 50px;
+    .boxElement {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 25px;
+      h1 {
+        font-size: 16px;
+        margin: 5px;
+      }
+      .boxIcon {
+        width: 83px;
+        height: 83px;
+      }
+      .boxIcon1 {
+        background-image: url("./Icon-1.svg");
+      }
+      .boxIcon2 {
+        background-image: url("./Icon-2.svg");
+      }
+      .boxIcon3 {
+        background-image: url("./Icon-3.svg");
+      }
+      .boxIcon4 {
+        background-image: url("./Icon-4.svg");
+      }
+      .boxLine {
+        height: 2px;
+        width: 100px;
+        background-color: dimgray ;
+        opacity: 0.5;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
