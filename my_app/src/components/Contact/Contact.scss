@@ -2,18 +2,28 @@
 
 .contact {
   display: flex;
-  flex-direction: column;
-  background-image: url("Background-Contact-Form.jpg");
+  justify-content: center;
+  align-items: center;
+  background-image: url("contact-opacity.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
   width: 100vw;
   height: 900px;
-  .contactForm {
+  .contactDiv {
+    position: relative;
+    left: 400px;
     display: flex;
     flex-direction: column;
-    .inputStyle {
-      width: 200px;
+    justify-content: center;
+    align-items: center;
+    .contactForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .inputStyle {
+        width: 200px;
+      }
     }
   }
 }

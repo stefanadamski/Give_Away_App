@@ -26,31 +26,33 @@ const Contact = () => {
     }
     return (
         <div className='contact'>
-            <h1> Skontaktuj się z nami </h1>
-            <div>
-                <form className="contactForm" onSubmit={(e) => handleSubmit(e)}>
-                    <label>Wpisz swoje imię</label>
-                    <input type="text"
+            <div className='contactDiv'>
+                <h1> Skontaktuj się z nami </h1>
+                <div>
+                    <form className="contactForm" onSubmit={(e) => handleSubmit(e)}>
+                        <label>Wpisz swoje imię</label>
+                        <input type="text"
                            className="inputStyle"
                            value={name}
                            placeholder="Stefan"
                            onChange={(e) => setName(e.target.value)}
-                    />
-                    <label>Wpisz swój e-mail</label>
-                    <input type="email"
+                        />
+                        <label>Wpisz swój e-mail</label>
+                        <input type="email"
                            className="inputStyle"
                            value={emailAddress}
                            placeholder="krzysztof@kowalski.com"
                            onChange={(e) => setEmailAddress(e.target.value)}
-                    />
-                    <label>Wpisz swoją wiadomość</label>
-                    <textarea
-                        placeholder="Lorem ipsum dolor sit amet."
-                        className="inputStyle"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                    />
-                </form>
+                        />
+                        <label>Wpisz swoją wiadomość</label>
+                        <textarea
+                            placeholder="Lorem ipsum dolor sit amet."
+                            className="inputStyle"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                        />
+                    </form>
+                </div>
             </div>
         </div>
     );
