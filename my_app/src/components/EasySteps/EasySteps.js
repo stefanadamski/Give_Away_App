@@ -2,6 +2,10 @@ import React from 'react';
 import './EasySteps.scss';
 
 const EasySteps = () => {
+    const handleGiveAway = (e) => {
+        e.preventDefault();
+        window.location.href = window.location.origin + "/login";
+        }
     return (
         <div className="stepsContainer">
             <h1 className='stepsTitle'> Wystarczą 4 proste kroki </h1>
@@ -21,8 +25,7 @@ const EasySteps = () => {
                 </div>
                 <div className='boxElement'>
                     <div className='boxIcon boxIcon3'> </div>
-                    <h1> Zdecyduj komu <br/>
-                        chcesz pomóc </h1>
+                    <h1> Zdecyduj komu pomóc </h1>
                     <div className='boxLine'> </div>
                     <p> wybierz zaufane miejsce </p>
                 </div>
@@ -33,7 +36,9 @@ const EasySteps = () => {
                     <p> kurier przyjedzie w dogodnym terminie </p>
                 </div>
             </div>
-            <div className='giveAwayButton'> Oddaj rzeczy </div>
+            <button className='giveAwayButton'
+                 onClick={(e) => handleGiveAway(e)}>
+                 Oddaj rzeczy </button>
         </div>
     );
 };

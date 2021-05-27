@@ -1,0 +1,39 @@
+@import '../Main';
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .loginTitle {
+    font-size: 40px;
+    font-family: $font-alt;
+  }
+  .loginDecoration {
+    background-image: url("Decoration.svg");
+    background-size: cover;
+    background-position: center;
+    width: 253px;
+    height: 33px;
+  }
+  .loginForm {
+    background-color: $color1;
+    width: 400px;
+    height: 400px;
+    .loginInputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .inputStyle {
+      border-style: none;
+      background: transparent;
+    }
+    .loginButtons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

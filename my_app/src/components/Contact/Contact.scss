@@ -1,0 +1,19 @@
+@import '../Main';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-image: url("Background-Contact-Form.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  width: 100vw;
+  height: 900px;
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    .inputStyle {
+      width: 200px;
+    }
+  }
+}

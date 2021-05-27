@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./Contact.scss"
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -24,10 +25,10 @@ const Contact = () => {
         }
     }
     return (
-        <div>
+        <div className='contact'>
             <h1> Skontaktuj się z nami </h1>
-            <div className="contactForm">
-                <form onSubmit={(e) => handleSubmit(e)}>
+            <div>
+                <form className="contactForm" onSubmit={(e) => handleSubmit(e)}>
                     <label>Wpisz swoje imię</label>
                     <input type="text"
                            className="inputStyle"
@@ -43,8 +44,7 @@ const Contact = () => {
                            onChange={(e) => setEmailAddress(e.target.value)}
                     />
                     <label>Wpisz swoją wiadomość</label>
-                    <input
-                        type="password"
+                    <textarea
                         placeholder="Lorem ipsum dolor sit amet."
                         className="inputStyle"
                         value={message}

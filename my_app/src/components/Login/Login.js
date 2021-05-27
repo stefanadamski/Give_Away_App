@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Login.scss';
 
 const Login = () => {
     const [loginEmail, setLoginEmail] = useState("");
@@ -18,13 +19,17 @@ const Login = () => {
             window.location.href = window.location.origin + "/home";
         }
     }
+    const redirectToRegister = (e) => {
+        e.preventDefault();
+        window.location.href = window.location.origin + "/register";
+    }
     return (
         <>
             <div className='loginContainer'>
                 <div className='loginTitle'> Zaloguj się </div>
                 <div className='loginDecoration'> </div>
                 <div className="loginForm">
-                    <form onSubmit={(e) => handleSubmit(e)}>
+                    <form className="loginInputs" onSubmit={(e) => handleSubmit(e)}>
                         <label>Email</label>
                         <input type="email"
                                className="inputStyle"
@@ -40,7 +45,10 @@ const Login = () => {
                             value={loginPassword}
                             onChange={(e) => setLoginPassword(e.target.value)}
                         />
-                        <button className="loginButton"> Register </button>
+                        <div className='loginButtons'>
+                            <button className="registerButton" onClick={redirectToRegister}> Załóż konto </button>
+                            <button className="loginButton"> Zaloguj się </button>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -1,11 +1,17 @@
-@import '../../../scss/main';
+@import '../Main';
 
 .stepsContainer {
   font-family: $font-alt;
   color: $color5;
-  margin: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
   .stepsTitle{
-    margin: 30px;
+    margin: 20px;
   }
   .stepsDecoration {
     background-image: url("Decoration.svg");
@@ -17,6 +23,8 @@
   .giveAwayButton {
     text-transform: uppercase;
     font-size: 36px;
+    font-family: $font-alt;
+    color: $color5;
     width: 310px;
     height: 120px;
     background-color: white;
@@ -28,12 +36,15 @@
     align-items: center;
     background-color: $color1;
     padding: 50px;
+    margin: 30px;
+    width: 100%;
+    height: auto;
     .boxElement {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 25px;
+      margin: 45px;
       h1 {
         font-size: 16px;
         margin: 5px;
@@ -43,22 +54,23 @@
         height: 83px;
       }
       .boxIcon1 {
-        background-image: url("./Icon-1.svg");
+        background-image: url("Icon-1.svg");
       }
       .boxIcon2 {
-        background-image: url("./Icon-2.svg");
+        background-image: url("Icon-2.svg");
       }
       .boxIcon3 {
-        background-image: url("./Icon-3.svg");
+        background-image: url("Icon-3.svg");
       }
       .boxIcon4 {
-        background-image: url("./Icon-4.svg");
+        background-image: url("Icon-4.svg");
       }
       .boxLine {
-        height: 2px;
+        height: 1px;
         width: 100px;
+        margin: 10px;
         background-color: dimgray ;
-        opacity: 0.5;
+        opacity: 0.7;
       }
       p {
         font-size: 14px;

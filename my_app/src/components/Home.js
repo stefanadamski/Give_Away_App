@@ -1,23 +1,26 @@
-import ThreeColumns from "./homeComponents/ThreeColumns/ThreeColumns";
-import Contact from "./homeComponents/Contact/Contact";
-import AboutUs from "./homeComponents/AboutUs/AboutUs";
-import Login from "./Login";
-import Header from "./Header";
-import EasySteps from "./homeComponents/EasySteps/EasySteps";
-import Help from "./homeComponents/Help/Help";
-import '../scss/Home.scss';
+import ThreeColumns from "./ThreeColumns/ThreeColumns";
+import Contact from "./Contact/Contact";
+import AboutUs from "./AboutUs/AboutUs";
+import Login from "./Login/Login";
+import Header from "./Hearder/Header";
+import EasySteps from "./EasySteps/EasySteps";
+import Help from "./Help/Help";
+import Navigation from "./Navigation/Navigation";
+import Footer from "./Footer/Footer";
+import './Home.scss';
+
 
 function Home() {
     return (
         <div className="homeContainer">
+            <Navigation/>
             <Header/>
             <ThreeColumns/>
             <EasySteps/>
             <AboutUs/>
             <Help/>
             <Contact/>
-            <Login/>
-            <footer> </footer>
+            <Footer> </Footer>
         </div>
     );
 }

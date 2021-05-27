@@ -1,0 +1,39 @@
+@import '../Main';
+
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .registerTitle {
+    font-size: 40px;
+    font-family: $font-alt;
+  }
+  .registerDecoration {
+    background-image: url("Decoration.svg");
+    background-size: cover;
+    background-position: center;
+    width: 253px;
+    height: 33px;
+  }
+  .registerForm {
+    background-color: $color1;
+    width: 400px;
+    height: 400px;
+    .registerInputs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .inputStyle {
+      border-style: none;
+      background: transparent;
+    }
+    .registerButtons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

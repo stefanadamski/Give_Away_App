@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Register.scss';
 
 const Register = () => {
     const [email, setEmail] = useState("");
@@ -26,13 +27,15 @@ const Register = () => {
     return (
         <>
             <div className='registerContainer'>
+                <div className='registerTitle'> Zarejestruj się </div>
+                <div className='registerDecoration'> </div>
                 <div className="registerForm">
-                    <form onSubmit={(e) => handleSubmit(e)}>
+                    <form className="registerInputs" onSubmit={(e) => handleSubmit(e)}>
                         <label>Email</label>
                         <input type="email"
                                className="inputStyle"
                                value={email}
-                               placeholder="john@register.com"
+                               placeholder="john@login.com"
                                onChange={(e) => setEmail(e.target.value)}
                         />
                         <label>Password</label>
@@ -43,7 +46,6 @@ const Register = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
-                        <label>Confirm Password</label>
                         <input
                             type="confirm_password"
                             placeholder="**********"
@@ -51,7 +53,10 @@ const Register = () => {
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />
-                        <button className="registerButton"> Register </button>
+                        <div className='registerButtons'>
+                            <button className="loginButton"> Zaloguj się </button>
+                            <button className="registerButton" onClick={handleSubmit}> Załóż konto </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -60,3 +65,4 @@ const Register = () => {
 }
 
 export default Register;
+
