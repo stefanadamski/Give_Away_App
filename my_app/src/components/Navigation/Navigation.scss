@@ -1,0 +1,17 @@
+@import '../Main';
+
+.naviContainer {
+  font-family: $font-alt;
+  display: flex;
+  justify-content: flex-end;
+  .loginRegister {
+    display: flex;
+  }
+  .mainMenu {
+    display: flex;
+    font-size: 18px;
+    .menuBox {
+      margin: 20px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../Main';
+
+.footerContainer {
+  font-family: $font-alt;
+  font-size:  18px;
+  font-weight: 800;
+  color: $color5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  .socialMedia {
+    display: flex;
+    .facebook, .instagram {
+      background-size: cover;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+    }
+    .facebook {
+      background-image: url("Facebook.svg");
+    }
+    .instagram {
+      background-image: url("Instagram.svg");
+    }
+  }
+}

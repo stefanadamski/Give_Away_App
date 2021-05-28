@@ -1,11 +1,8 @@
 import React from 'react';
 import './EasySteps.scss';
+import {Link} from "react-router-dom";
 
 const EasySteps = () => {
-    const handleGiveAway = (e) => {
-        e.preventDefault();
-        window.location.href = window.location.origin + "/login";
-        }
     return (
         <div className="stepsContainer">
             <h1 className='stepsTitle'> Wystarczą 4 proste kroki </h1>
@@ -36,9 +33,9 @@ const EasySteps = () => {
                     <p> kurier przyjedzie w dogodnym terminie </p>
                 </div>
             </div>
-            <button className='giveAwayButton'
-                 onClick={(e) => handleGiveAway(e)}>
-                 Oddaj rzeczy </button>
+            <button className='giveAwayButton'>
+                <Link to="/giveaway" style={{ textDecoration: 'none', color: '#3C3C3C' }}> ODDAJ RZECZY </Link>
+            </button>
         </div>
     );
 };

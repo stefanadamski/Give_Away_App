@@ -1,11 +1,5 @@
 import React from 'react';
 import './AboutUs.scss';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch,
-} from 'react-router-dom';
 
 const AboutUs = () => {
     return (
@@ -17,7 +11,6 @@ const AboutUs = () => {
                     fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek
                     lentil turnip greens parsnip. </div>
                 <div className='aboutSign'> </div>
-                <Link to="/login"> Login </Link>
             </div>
             <div className="aboutRight"> </div>
         </div>

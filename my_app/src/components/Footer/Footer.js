@@ -3,8 +3,12 @@ import './Footer.scss';
 
 const Footer = () => {
     return (
-        <div>
-
+        <div className='footerContainer'>
+            <div> &copy; Stefan Adamski </div>
+            <div className='socialMedia'>
+                <div className='facebook'> </div>
+                <div className='instagram'> </div>
+            </div>
         </div>
     );
 };
