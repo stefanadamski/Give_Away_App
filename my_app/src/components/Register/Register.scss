@@ -9,13 +9,6 @@
     font-size: 40px;
     font-family: $font-alt;
   }
-  .registerDecoration {
-    background-image: url("Decoration.svg");
-    background-size: cover;
-    background-position: center;
-    width: 253px;
-    height: 33px;
-  }
   .registerForm {
     background-color: $color1;
     width: 400px;
@@ -29,6 +22,7 @@
     .inputStyle {
       border-style: none;
       background: transparent;
+      margin: 30px;
     }
     .registerButtons {
       display: flex;

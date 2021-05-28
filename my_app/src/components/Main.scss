@@ -1,7 +1,7 @@
 @import 'scssSettings/colors', 'scssSettings/fonts', 'scssSettings/reset';
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: $font-base;
 }
@@ -14,6 +14,14 @@ body {
   height: 120px;
   background-color: white;
   border: 1px solid $color5;
+}
+
+.decoration {
+  background-image: url("../assets/Decoration.svg");
+  background-size: cover;
+  background-position: center;
+  width: 253px;
+  height: 33px;
 }
 
 

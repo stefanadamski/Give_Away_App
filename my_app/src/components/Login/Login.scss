@@ -9,13 +9,6 @@
     font-size: 40px;
     font-family: $font-alt;
   }
-  .loginDecoration {
-    background-image: url("Decoration.svg");
-    background-size: cover;
-    background-position: center;
-    width: 253px;
-    height: 33px;
-  }
   .loginForm {
     background-color: $color1;
     width: 400px;
@@ -29,6 +22,7 @@
     .inputStyle {
       border-style: none;
       background: transparent;
+      margin: 30px;
     }
     .loginButtons {
       display: flex;

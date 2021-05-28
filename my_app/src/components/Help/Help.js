@@ -12,12 +12,15 @@ const Help = () => {
     }
     return (
         <div>
-            <div className='formSteps'>
+            <div> Komu pomagamy?</div>
+            <div className='decoration'> </div>
+            <div className='helpSteps'>
                 {helpStep === 1 && (<HelpStep1/>)}
                 {helpStep === 2 && (<HelpStep2/>)}
                 {helpStep === 3 && (<HelpStep3/>)}
             </div>
-            <button onClick={completeFormStep}> Dalej </button>
+            <button onClick={completeFormStep}> 1 </button>
+            <button onClick={completeFormStep}> 2 </button>
         </div>
     );
 };

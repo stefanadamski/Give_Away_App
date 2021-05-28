@@ -9,15 +9,15 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (email.length < 5 || email.indexOf("@") === -1) {
-            alert("Please enter a valid e-mail address");
+            alert("Wpisz poprawny adres e-mail");
             return false;
         }
         if (password.length < 6) {
-            alert("Please enter at least 6 characters");
+            alert("Wpisz conajmniej 6 znaków");
             return false;
         }
         if (password !== confirmPassword) {
-            alert("Passwords are different");
+            alert("Hasła nie są jednakowe");
             return false;
         }
         else {
@@ -28,17 +28,17 @@ const Register = () => {
         <>
             <div className='registerContainer'>
                 <div className='registerTitle'> Zarejestruj się </div>
-                <div className='registerDecoration'> </div>
+                <div className='decoration'> </div>
                 <div className="registerForm">
                     <form className="registerInputs" onSubmit={(e) => handleSubmit(e)}>
-                        <label>Email</label>
+                        <label>E-mail</label>
                         <input type="email"
                                className="inputStyle"
                                value={email}
-                               placeholder="john@login.com"
+                               placeholder="piotr@login.com"
                                onChange={(e) => setEmail(e.target.value)}
                         />
-                        <label>Password</label>
+                        <label>Hasło</label>
                         <input
                             type="password"
                             placeholder="**********"
@@ -46,8 +46,9 @@ const Register = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
+                        <label>Potwierdź hasło</label>
                         <input
-                            type="confirm_password"
+                            type="password"
                             placeholder="**********"
                             className="inputStyle"
                             value={confirmPassword}

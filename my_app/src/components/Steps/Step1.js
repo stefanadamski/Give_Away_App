@@ -1,37 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import useForm from "react-hook-form";
+import React, {useState} from "react";
+import './Steps.scss'
 
-const Step = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
-        alert(JSON.stringify(data));
-    };
-
-    const rainbow = "red orange yellow green blue indigo violet".split(' ');
-
+const Step1 = () => {
+    const [options, setOptions] = useState(["ubrania do ponownego użycia",
+        "ubrania do wyrzucenia", "zabawki", "książki", "inne"]);
     return (
-        <div className="App">
-            <form onSubmit={handleSubmit(onSubmit)}>
-
-                <fieldset style={{float: 'left'}}>
-                    <legend>With the same name</legend>
-                    {
-                        rainbow.map(
-                            (c,i) => <label key={c}><input type="checkbox" value={c} name="sameName" ref={register} />{c}</label>
+        <div>
+            <span> Krok 1/4 </span>
+            <h1> Zaznacz co chcesz oddać:</h1>
+            <form className="checkboxForm">
+                    {options.map(
+                            (el,i) => <><input type="radio" value={el} name="option"/> {el}</>
                         )
                     }
-                </fieldset>
-                <fieldset style={{float: 'right'}}>
-                    <legend>Using a fake index</legend>
-                    {
-                        rainbow.map(
-                            (c,i) => <label key={c}><input type="checkbox" value={c} name={"withIndex."+i*2} ref={register} />{c}</label>
-                        )
-                    }
-                </fieldset>
-                <input type="submit" />
             </form>
         </div>
     );
 }
+
+export default Step1;

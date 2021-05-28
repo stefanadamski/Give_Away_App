@@ -27,7 +27,7 @@ const Login = () => {
         <>
             <div className='loginContainer'>
                 <div className='loginTitle'> Zaloguj się </div>
-                <div className='loginDecoration'> </div>
+                <div className='decoration'> </div>
                 <div className="loginForm">
                     <form className="loginInputs" onSubmit={(e) => handleSubmit(e)}>
                         <label>Email</label>

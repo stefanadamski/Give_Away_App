@@ -9,7 +9,7 @@ const Header = () => {
             <div className='startHelping'>
                 <h1> Zacznij pomagać!<br/>
                     Oddaj niechciane rzeczy w zaufane ręce </h1>
-                <div className='decorationHeader'> </div>
+                <div className='decoration'> </div>
                 <Link to="/login" className='giveAwayButton' style={{ textDecoration: 'none' }}> ODDAJ RZECZY </Link>
                 <Link to="/giveaway" className='giveAwayButton' style={{ textDecoration: 'none' }}> ZORGANIZUJ ZBIÓRKĘ </Link>
             </div>
