@@ -1,1 +1,15 @@
 @import '../Main';
+
+.formSteps {
+  width: 500px;
+  height: 500px;
+  background-color: $color1;
+  display: flex;
+  flex-direction: column;
+  .stepButton {
+    font-family: $font-alt;
+    padding: 20px;
+    border: 1px solid $color5;
+  }
+}
+
