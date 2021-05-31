@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import './Register.scss';
+import './register.scss';
+import Menu from "../Menu/Menu";
 
 const Register = () => {
     const [email, setEmail] = useState("");
@@ -26,8 +27,9 @@ const Register = () => {
     }
     return (
         <>
+            <Menu/>
             <div className='registerContainer'>
-                <div className='registerTitle'> Zarejestruj się </div>
+                <h1> Zarejestruj się </h1>
                 <div className='decoration'> </div>
                 <div className="registerForm">
                     <form className="registerInputs" onSubmit={(e) => handleSubmit(e)}>

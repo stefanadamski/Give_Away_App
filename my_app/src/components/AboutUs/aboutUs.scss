@@ -2,46 +2,37 @@
 
 .aboutContainer {
   display: flex;
-  width: 100vw;
-  height: auto;
-  color: $color5;
+  margin-top: 20px;
   .aboutLeft {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: $color1;
-    width: 50vw;
+    width: 50%;
     padding: 10%;
-    .aboutTitle {
-      font-size: 30px;
-      margin-top: 30px;
-    }
-    .aboutDecoration {
-      background-image: url("Decoration.svg");
-      background-size: cover;
-      background-position: center;
-      width: 253px;
-      height: 33px;
-    }
     .aboutDescription {
       font-size: 18px;
-      max-width: 650px;
+      max-width: 700px;
+      margin: 15px;
     }
     .aboutSign {
+      display: flex;
+      position: relative;
+      left: 25%;
       background-image: url("Signature.svg");
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: center;
+      margin: 20px;
       width: 150px;
       height: 112px;
-      position: relative;
-      left: 100px;
     }
   }
   .aboutRight {
     background-image: url("People.jpg");
     background-size: cover;
     background-position: center;
-    width: 50vw;
+    width: 50%;
   }
 }

@@ -1,30 +1,22 @@
 @import '../Main';
 
-.loginContainer {
+.registerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .loginTitle {
-    font-size: 40px;
-    font-family: $font-alt;
-  }
-  .loginForm {
+  margin: 70px;
+  .registerForm {
     background-color: $color1;
     width: 400px;
     height: 400px;
-    .loginInputs {
+    .registerInputs {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
-    .inputStyle {
-      border-style: none;
-      background: transparent;
-      margin: 30px;
-    }
-    .loginButtons {
+    .registerButtons {
       display: flex;
       justify-content: center;
       align-items: center;

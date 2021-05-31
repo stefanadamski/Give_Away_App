@@ -1,4 +1,23 @@
-@import 'scssSettings/colors', 'scssSettings/fonts', 'scssSettings/reset';
+@import 'scssSettings/colors', 'scssSettings/fonts', 'scssSettings/reset', 'scssSettings/mixins';
+
+* {
+  box-sizing: border-box;
+  color: $color5;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+
+  @include notebook {
+    width: 100%;
+  }
+}
 
 body {
   margin: 0 auto;
@@ -7,13 +26,14 @@ body {
 }
 
 .giveAwayButton {
-  font-size: 36px;
+  font-size: 30px;
   font-family: $font-alt;
   color: $color5;
-  width: 310px;
-  height: 120px;
-  background-color: white;
+  width: 280px;
+  height: 100px;
+  background: transparent;
   border: 1px solid $color5;
+  margin: 25px;
 }
 
 .decoration {
@@ -22,6 +42,29 @@ body {
   background-position: center;
   width: 253px;
   height: 33px;
+  margin: 15px;
 }
+
+h1 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.inputStyle, .textareaStyle {
+  font-family: $font-alt;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $color5;
+  width: 200px;
+  margin: 15px;
+
+  padding: 10px;
+}
+
+.textareaStyle {
+  width: 410px;
+}
+
 
 

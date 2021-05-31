@@ -17,8 +17,7 @@ const Step3 = () => {
             <form className="receiversForm">
                 {receivers.map(
                     (el,i) => <><input type="radio" value={el} name="option"/>{el}</>
-                )
-                }
+                )}
             </form>
             <input type='text'/>
         </div>

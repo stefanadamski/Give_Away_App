@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import './Login.scss';
+import './login.scss';
+import Menu from "../Menu/Menu";
 
 const Login = () => {
     const [loginEmail, setLoginEmail] = useState("");
@@ -16,7 +17,7 @@ const Login = () => {
             return false;
         }
         else {
-            window.location.href = window.location.origin + "/home";
+            window.location.href = window.location.origin + "/";
         }
     }
     const redirectToRegister = (e) => {
@@ -25,8 +26,9 @@ const Login = () => {
     }
     return (
         <>
+            <Menu/>
             <div className='loginContainer'>
-                <div className='loginTitle'> Zaloguj się </div>
+                <h1> Zaloguj się </h1>
                 <div className='decoration'> </div>
                 <div className="loginForm">
                     <form className="loginInputs" onSubmit={(e) => handleSubmit(e)}>

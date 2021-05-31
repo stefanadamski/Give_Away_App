@@ -1,12 +1,12 @@
 import React from 'react';
-import './AboutUs.scss';
+import './aboutUs.scss';
 
 const AboutUs = () => {
     return (
-        <div className='aboutContainer'>
+        <div className='aboutContainer container'>
             <div className="aboutLeft">
-                <h1 className='aboutTitle'> O nas </h1>
-                <div className='aboutDecoration'> </div>
+                <h1> O nas </h1>
+                <div className='decoration'> </div>
                 <div className='aboutDescription'> Nori grape silver beet broccoli kombu beet greens
                     fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek
                     lentil turnip greens parsnip. </div>

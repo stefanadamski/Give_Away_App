@@ -1,12 +1,12 @@
 import React from 'react';
-import './EasySteps.scss';
+import './easySteps.scss';
 import {Link} from "react-router-dom";
 
 const EasySteps = () => {
     return (
         <div className="stepsContainer">
             <h1 className='stepsTitle'> Wystarczą 4 proste kroki </h1>
-            <div className='stepsDecoration'> </div>
+            <div className='decoration'> </div>
             <div className='stepsElements'>
                 <div className='boxElement'>
                     <div className='boxIcon boxIcon1'> </div>

@@ -1,12 +1,8 @@
 @import '../Main';
 
 .footerContainer {
-  font-family: $font-alt;
-  font-size:  18px;
-  font-weight: 800;
-  color: $color5;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background: transparent;
   .socialMedia {
@@ -16,6 +12,7 @@
       background-position: center;
       width: 30px;
       height: 30px;
+      margin: 10px;
     }
     .facebook {
       background-image: url("Facebook.svg");

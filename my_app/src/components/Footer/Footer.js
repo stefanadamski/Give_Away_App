@@ -1,13 +1,19 @@
 import React from 'react';
-import './Footer.scss';
+import './footer.scss';
 
 const Footer = () => {
+    const handleFacebook = () => {
+
+    }
+    const handleInstagram = () => {
+
+    }
     return (
         <div className='footerContainer'>
             <div> &copy; Stefan Adamski </div>
             <div className='socialMedia'>
-                <div className='facebook'> </div>
-                <div className='instagram'> </div>
+                <div className='facebook' onClick={handleFacebook}> </div>
+                <div className='instagram' onClick={handleInstagram}> </div>
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navigation.scss'
+import './navigation.scss'
 import {Link} from "react-router-dom";
 
 const Navigation = () => {

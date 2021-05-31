@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Logout.scss";
+import "./logout.scss";
 
 const Logout = () => {
     const handleReturnToMainPage = () => {

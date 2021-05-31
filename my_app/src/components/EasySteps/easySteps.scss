@@ -2,8 +2,7 @@
 
 .stepsContainer {
   font-family: $font-alt;
-  color: $color5;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,13 +11,6 @@
   height: auto;
   .stepsTitle{
     margin: 20px;
-  }
-  .stepsDecoration {
-    background-image: url("Decoration.svg");
-    background-size: cover;
-    background-position: center;
-    width: 253px;
-    height: 33px;
   }
   .stepsElements {
     display: flex;

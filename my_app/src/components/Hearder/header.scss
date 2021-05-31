@@ -1,23 +1,24 @@
 @import '../Main';
 
 .headerContainer {
-  font-family: $font-alt;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   width: 100vw;
-  height: 900px;
   .headerLeft {
     background-image: url("Home-Hero-Image.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 50vw;
-    height: 900px;
+    height: 540px;
   }
   .startHelping {
-    h1 {
-      font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    .headerButtons {
+      display: flex;
     }
   }
 }

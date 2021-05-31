@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './Steps.scss'
+import './allSteps.scss'
 
 const Step1 = () => {
     const [options, setOptions] = useState(["ubrania do ponownego użycia",

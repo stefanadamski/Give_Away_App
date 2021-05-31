@@ -22,8 +22,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .inputStyle {
-        width: 200px;
+      .firstRowContact {
+        display: flex;
+        .contactDetails {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }
