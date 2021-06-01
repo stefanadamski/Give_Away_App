@@ -13,8 +13,8 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (emailRegex.test(emailAddress)) {
-            setEmailError(false);
+        if (!emailRegex.test(emailAddress)) {
+            setEmailError(true);
         }
         if (name.length < 2) {
             setNameError(true);
@@ -24,6 +24,9 @@ const Contact = () => {
         }
         else {
             setConfirmation(true);
+            setMessageError(false);
+            setNameError(false);
+            setEmailError(false);
             const data = {name, emailAddress, message}
             fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
                 method: 'POST',

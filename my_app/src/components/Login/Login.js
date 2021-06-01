@@ -5,16 +5,16 @@ import Menu from "../Menu/Menu";
 const Login = () => {
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
+    const [loginEmailError, setLoginEmailError] = useState(false);
+    const [loginPasswordError, setLoginPasswordError] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (loginEmail.length < 5 || loginEmail.indexOf("@") === -1) {
-            alert("Please enter a valid e-mail address");
-            return false;
+            setLoginEmailError(true);
         }
         if (loginPassword.length < 6) {
-            alert("Please enter at least 6 characters");
-            return false;
+            setLoginPasswordError(true);
         }
         else {
             window.location.href = window.location.origin + "/";
@@ -39,6 +39,7 @@ const Login = () => {
                                placeholder="piotr@login.com"
                                onChange={(e) => setLoginEmail(e.target.value)}
                         />
+                        {loginEmailError === true && (<> <div className='redError'> Podany e-mail jest nieprawidłowy! </div> </>)}
                         <label>Password</label>
                         <input
                             type="password"
@@ -47,6 +48,7 @@ const Login = () => {
                             value={loginPassword}
                             onChange={(e) => setLoginPassword(e.target.value)}
                         />
+                        {loginPasswordError === true && (<> <div className='redError'> Podane hasło jest za krótkie! </div> </>)}
                         <div className='loginButtons'>
                             <button className="registerButton" onClick={redirectToRegister}> Załóż konto </button>
                             <button className="loginButton"> Zaloguj się </button>

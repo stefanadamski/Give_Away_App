@@ -6,20 +6,20 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const [registerEmailError, setRegisterEmailError] = useState(false);
+    const [registerPassError, setRegisterPassError] = useState(false);
+    const [registerConfirmError, setRegisterConfirmError] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (email.length < 5 || email.indexOf("@") === -1) {
-            alert("Wpisz poprawny adres e-mail");
-            return false;
+            setRegisterEmailError(true);
         }
         if (password.length < 6) {
-            alert("Wpisz conajmniej 6 znaków");
-            return false;
+            setRegisterPassError(true);
         }
         if (password !== confirmPassword) {
-            alert("Hasła nie są jednakowe");
-            return false;
+            setRegisterConfirmError(true);
         }
         else {
             window.location.href = window.location.origin + "/login";
@@ -40,6 +40,7 @@ const Register = () => {
                                placeholder="piotr@login.com"
                                onChange={(e) => setEmail(e.target.value)}
                         />
+                        {registerEmailError === true && (<> <div className='redError'> Podany e-mail jest nieprawidłowy! </div> </>)}
                         <label>Hasło</label>
                         <input
                             type="password"
@@ -48,6 +49,7 @@ const Register = () => {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
+                        {registerPassError === true && (<> <div className='redError'> Podane hasłojest za krótkie! </div> </>)}
                         <label>Potwierdź hasło</label>
                         <input
                             type="password"
@@ -56,6 +58,7 @@ const Register = () => {
                             value={confirmPassword}
                             onChange={(e) => setConfirmPassword(e.target.value)}
                         />
+                        {registerConfirmError === true && (<> <div className='redError'> Podane hasła są różne! </div> </>)}
                         <div className='registerButtons'>
                             <button className="loginButton"> Zaloguj się </button>
                             <button className="registerButton" onClick={handleSubmit}> Załóż konto </button>
