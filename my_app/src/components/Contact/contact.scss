@@ -17,6 +17,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .greenConfirmation {
+      font-size: 15px;
+      color: forestgreen;
+      width: 50%;
+      margin: 10px;
+    }
     .contactForm {
       display: flex;
       flex-direction: column;
@@ -31,4 +37,10 @@
       }
     }
   }
+}
+
+.redError {
+  font-size: 15px;
+  color: red;
+  width: 100%;
 }

@@ -5,22 +5,25 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [emailAddress, setEmailAddress] = useState("");
     const [message, setMessage] = useState("");
+    const [confirmation, setConfirmation] = useState(false);
+    const [nameError, setNameError] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const [messageError, setMessageError] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (emailAddress.length < 5 || emailAddress.indexOf("@") === -1) {
-            alert("Wpisz poprawny adres e-mail!");
-            return false;
+        const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (emailRegex.test(emailAddress)) {
+            setEmailError(false);
         }
         if (name.length < 2) {
-            alert("Twoje imię jest za krótkie!");
-            return false;
+            setNameError(true);
         }
         if (message.length < 120) {
-            alert("Napisz coś więcej!");
-            return false;
+            setMessageError(true);
         }
         else {
+            setConfirmation(true);
             const data = {name, emailAddress, message}
             fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
                 method: 'POST',
@@ -32,6 +35,7 @@ const Contact = () => {
                 .then(response => response.json())
                 .then(data => {
                     console.log('Success:', data);
+                    setConfirmation(true);
 
                 })
                 .catch((error) => {
@@ -44,6 +48,9 @@ const Contact = () => {
             <div className='contactDiv'>
                 <h1> Skontaktuj się z nami </h1>
                 <div className='decoration'> </div>
+                {confirmation === true && (<>
+                    <div className='greenConfirmation'> Wiadomość została wysłana! Wkrótce się skontaktujemy! </div>
+                    </>)}
                 <div>
                     <form className="contactForm" onSubmit={(e) => handleSubmit(e)}>
                         <div className='firstRowContact'>
@@ -55,6 +62,7 @@ const Contact = () => {
                                        placeholder="Stefan"
                                        onChange={(e) => setName(e.target.value)}
                                 />
+                                {nameError === true && (<div className='redError'> Podane imię jest nieprawidłowe! </div>)}
                             </div>
                             <div className='contactDetails'>
                                 <label>Wpisz swój e-mail</label>
@@ -64,6 +72,7 @@ const Contact = () => {
                                        placeholder="krzysztof@nowak.com"
                                        onChange={(e) => setEmailAddress(e.target.value)}
                                 />
+                                {emailError === true && (<> <div className='redError'> Podany e-mail jest nieprawidłowy! </div> </>)}
                             </div>
                         </div>
                         <label>Wpisz swoją wiadomość</label>
@@ -73,6 +82,7 @@ const Contact = () => {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />
+                        {messageError === true && (<> <div className='redError'> Wiadomość musi mieć conajmniej 120 znaków! </div> </>)}
                         <button className='giveAwayButton'> WYŚLIJ </button>
                     </form>
                 </div>
