@@ -1,11 +1,11 @@
 import React from 'react';
 
-const HelpStep3 = () => {
+const Page3 = () => {
     return (
         <div>
-            
+            <h1> TRZY </h1>
         </div>
     );
 };
 
-export default HelpStep3;
+export default Page3;

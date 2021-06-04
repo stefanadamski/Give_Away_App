@@ -4,10 +4,12 @@ import './menu.scss'
 const Menu = () => {
     return (
         <div className='mainMenu'>
-            <div className='menuBox'> Start </div>
-            <div className='menuBox'> O co chodzi? </div>
-            <div className='menuBox'> Fundacja i organizacje </div>
-            <div className='menuBox'> Kontakt </div>
+            <ul className='menuDisplay'>
+                <li className='menuItem'> Start </li>
+                <li className='menuItem'> O co chodzi? </li>
+                <li className='menuItem'> Fundacja i organizacje </li>
+                <li className='menuItem'> Kontakt </li>
+            </ul>
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useHistory } from "react-router-dom";
 import './login.scss';
 import Menu from "../Menu/Menu";
 
@@ -7,6 +8,7 @@ const Login = () => {
     const [loginPassword, setLoginPassword] = useState("");
     const [loginEmailError, setLoginEmailError] = useState(false);
     const [loginPasswordError, setLoginPasswordError] = useState(false);
+    let history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,12 +19,12 @@ const Login = () => {
             setLoginPasswordError(true);
         }
         else {
-            window.location.href = window.location.origin + "/";
+            history.push('/');
         }
     }
     const redirectToRegister = (e) => {
         e.preventDefault();
-        window.location.href = window.location.origin + "/register";
+        history.push('/register')
     }
     return (
         <>

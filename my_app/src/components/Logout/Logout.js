@@ -1,9 +1,11 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import "./logout.scss";
 
 const Logout = () => {
+    let history = useHistory();
     const handleReturnToMainPage = () => {
-        window.location.href = window.location.origin + "/home";
+        history.push('/home');
     }
     return (
         <div className='logoutContainer'>

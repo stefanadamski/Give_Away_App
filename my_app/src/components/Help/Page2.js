@@ -1,11 +1,11 @@
 import React from 'react';
 
-const HelpStep2 = () => {
+const Page2 = () => {
     return (
         <div>
-            
+            <h1> DWA </h1>
         </div>
     );
 };
 
-export default HelpStep2;
+export default Page2;

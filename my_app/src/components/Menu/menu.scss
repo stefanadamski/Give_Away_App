@@ -1,9 +1,13 @@
 @import '../Main';
 
 .mainMenu {
-  display: flex;
   font-size: 18px;
-  .menuBox {
+  .menuDisplay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menuItem {
     margin: 20px;
   }
 }

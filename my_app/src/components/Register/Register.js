@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useHistory } from "react-router-dom";
 import './register.scss';
 import Menu from "../Menu/Menu";
 
@@ -9,6 +10,7 @@ const Register = () => {
     const [registerEmailError, setRegisterEmailError] = useState(false);
     const [registerPassError, setRegisterPassError] = useState(false);
     const [registerConfirmError, setRegisterConfirmError] = useState(false);
+    let history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,7 +24,7 @@ const Register = () => {
             setRegisterConfirmError(true);
         }
         else {
-            window.location.href = window.location.origin + "/login";
+            history.push('/login');
         }
     }
     return (

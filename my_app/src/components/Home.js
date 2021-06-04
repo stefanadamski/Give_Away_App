@@ -3,10 +3,10 @@ import Contact from "./Contact/Contact";
 import AboutUs from "./AboutUs/AboutUs";
 import Header from "./Hearder/Header";
 import EasySteps from "./EasySteps/EasySteps";
-import Help from "./Help/Help";
 import Navigation from "./Navigation/Navigation";
 import Footer from "./Footer/Footer";
 import Menu from "./Menu/Menu";
+import Pagination from "./Help/Pagination";
 
 function Home() {
     return (
@@ -17,7 +17,7 @@ function Home() {
             <ThreeColumns/>
             <EasySteps/>
             <AboutUs/>
-            <Help/>
+            <Pagination/>
             <Contact/>
             <Footer> </Footer>
         </div>
