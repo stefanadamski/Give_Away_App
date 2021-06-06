@@ -6,8 +6,8 @@ const Navigation = () => {
     return (
         <div className='naviContainer'>
             <div className='loginRegister'>
-                <Link to="/login" style={{ textDecoration: 'none', fontSize: '25px' }}> Zaloguj się </Link>
-                <Link to="/register" style={{ textDecoration: 'none', fontSize: '25px'  }}> Zarejestruj się </Link>
+                <Link to="/login" className='loginLink'> Zaloguj się </Link>
+                <Link to="/register" className='loginLink'> Zarejestruj się </Link>
             </div>
         </div>
     );
