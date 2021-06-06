@@ -1,0 +1,12 @@
+.mainMenu {
+  font-size: 18px;
+  .menuDisplay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menuItem {
+    margin: 20px;
+    cursor: pointer;
+  }
+}

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../pagination.scss'
+import '../help.scss'
 import PagesTemplate from "./PagesTemplate";
 
 const Page1 = () => {

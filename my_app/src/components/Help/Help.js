@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import Page1 from "./Pages/Page1";
 import Page2 from "./Pages/Page2";
 import Page3 from "./Pages/Page3";
-import './pagination.scss'
+import './help.scss'
 
-const Pagination = () => {
+const Help = () => {
     const [page, setPage] = useState(1);
     const handleFoundations = () => {
         setPage(1);
@@ -16,7 +16,7 @@ const Pagination = () => {
         setPage(3);
     }
     return (
-        <div className='paginatorContainer'>
+        <div className='paginatorContainer' id='help'>
             <div className='paginatorOptions'>
                 <button className='giveAwayButton' onClick={handleFoundations}> Fundacjom </button>
                 <button className='giveAwayButton' onClick={handleOrganizations}> Organizacjom pozarządowym </button>
@@ -35,6 +35,6 @@ const Pagination = () => {
     );
 };
 
-export default Pagination;
+export default Help;
 
 

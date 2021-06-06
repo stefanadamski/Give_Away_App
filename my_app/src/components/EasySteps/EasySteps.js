@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const EasySteps = () => {
     return (
-        <div className="stepsContainer">
+        <div className="stepsContainer" id='easy'>
             <h1 className='stepsTitle'> Wystarczą 4 proste kroki </h1>
             <div className='decoration'> </div>
             <div className='stepsElements'>
