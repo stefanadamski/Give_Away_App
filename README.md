@@ -1,1 +1,1 @@
-# Oddam_w_dobre_rece
+"Oddam w dobre ręce" landing page.
