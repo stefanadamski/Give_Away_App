@@ -1,13 +1,18 @@
 @import '../Main';
 
-.mainMenu {
-  font-size: 18px;
-  .menuDisplay {
+.main_menu {
+  .menu_display {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-  .menuItem {
-    margin: 20px;
+  .menu_item {
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .menu_item:hover {
+    color: $color3;
   }
 }

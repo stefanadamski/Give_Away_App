@@ -1,27 +1,27 @@
 @import '../Main';
 
-.stepsContainer {
-  font-family: $font-alt;
+.steps_container {
   margin: 30px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: auto;
-  .stepsTitle{
+  .steps_title {
+    font-size: 26px;
     margin: 20px;
   }
-  .stepsElements {
+  .all_steps {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: $color1;
     padding: 50px;
-    margin: 30px;
-    width: 100%;
+    margin: 20px;
     height: auto;
-    .boxElement {
+    width: 100%;
+    .box_element {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -29,25 +29,34 @@
       margin: 45px;
       h1 {
         font-size: 16px;
-        margin: 5px;
+        margin: 15px;
+        color: $color3;
       }
-      .boxIcon {
-        width: 83px;
-        height: 83px;
+      .box_icon {
+        background-color: $color3;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80px;
+        height: 80px;
+        margin:10px;
+        border: 2px solid $color3;
+        border-radius: 4px;
+        opacity: 0.7;
       }
-      .boxIcon1 {
+      .box_icon1 {
         background-image: url("Icon-1.svg");
       }
-      .boxIcon2 {
+      .box_icon2 {
         background-image: url("Icon-2.svg");
       }
-      .boxIcon3 {
+      .box_icon3 {
         background-image: url("Icon-3.svg");
       }
-      .boxIcon4 {
+      .box_icon4 {
         background-image: url("Icon-4.svg");
       }
-      .boxLine {
+      .box_line {
         height: 1px;
         width: 100px;
         margin: 10px;
@@ -55,6 +64,7 @@
         opacity: 0.7;
       }
       p {
+        font-family: $font-alt;
         font-size: 14px;
       }
     }

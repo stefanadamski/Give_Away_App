@@ -1,34 +1,36 @@
 @import '../Main';
 
-.threeColumns {
+.three_columns {
   font-family: $font-alt;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-content: center;
-  width: 100vw;
-  height: 300px;
   background-image: url("3 Columns Background@2x.png");
   background-position: center;
   background-size: cover;
+  opacity: 0.8;
   .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 35px;
-    margin-left: 35px;
+    margin: 10px;
     padding: 20px;
     width: 334px;
     height: 252px;
     color: $color5;
     h1 {
-      font-size: 90px;
+      font-size: 60px;
+      margin: 3px;
     }
     h2 {
       font-size: 18px;
+      margin: 3px;
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
+      margin: 3px;
     }
   }
 }

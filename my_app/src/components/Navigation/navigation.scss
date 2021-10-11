@@ -1,19 +1,20 @@
 @import '../Main';
 
-.naviContainer {
+.navi_container {
   font-family: $font-alt;
   display: flex;
   justify-content: flex-end;
-  .loginRegister {
+  .login_register {
     display: flex;
-    .loginLink {
+    .login_link {
       text-decoration: none;
-      border: 1px solid white;
-      font-size: 20px;
+      border: 2px solid white;
+      font-size: 18px;
       padding: 5px;
       margin: 20px;
       &:hover {
-        border: 1px solid gold;
+        border: 2px solid gold;
+        border-radius: 3px;
       }
     }
   }

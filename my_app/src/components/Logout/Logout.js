@@ -5,12 +5,13 @@ import "./logout.scss";
 const Logout = () => {
     let history = useHistory();
     const handleReturnToMainPage = () => {
-        history.push('/home');
+        history.push('/');
     }
     return (
-        <div className='logoutContainer'>
+        <div className='logout_container'>
+            <div className='decoration'> </div>
             <h1> Wylogowanie nastąpiło pomyślnie! </h1>
-            <div className='logoutDecoration'/>
+            <div className='logout_decoration'/>
             <button onClick={handleReturnToMainPage}> Strona główna </button>
         </div>
     );

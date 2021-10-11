@@ -20,9 +20,9 @@ const Page1 = () => {
                 {foundationPage === 3 && (<PagesTemplate title='Fundacje3' description='description' elements='elements'/>)}
             </div>
             <div>
-                <button onClick={handleFirstPage}> 1 </button>
-                <button onClick={handleSecondPage}> 2 </button>
-                <button onClick={handleThirdPage}> 3 </button>
+                <button onClick={handleFirstPage} className='the_other_button'> 1 </button>
+                <button onClick={handleSecondPage} className='the_other_button'> 2 </button>
+                <button onClick={handleThirdPage} className='the_other_button'> 3 </button>
             </div>
         </>
     );

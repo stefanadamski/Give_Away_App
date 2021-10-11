@@ -1,17 +1,26 @@
 @import '../Main';
 
-.footerContainer {
+.container_footer{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background: transparent;
-  .socialMedia {
-    display: flex;
+  margin: 20px;
+  padding: 20px;
+  height: 100px;
+  .copy {
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+  }
     .facebook, .instagram {
-      background-size: cover;
+      background-image: url("Facebook.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: center;
-      width: 30px;
-      height: 30px;
+      filter: invert(97%) sepia(45%) saturate(3909%) hue-rotate(321deg) brightness(105%) contrast(96%);
+      width: 20px;
+      height: 20px;
       margin: 10px;
     }
     .facebook {
@@ -20,5 +29,4 @@
     .instagram {
       background-image: url("Instagram.svg");
     }
-  }
 }

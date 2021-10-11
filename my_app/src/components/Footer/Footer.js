@@ -2,19 +2,11 @@ import React from 'react';
 import './footer.scss';
 
 const Footer = () => {
-    const handleFacebook = () => {
-
-    }
-    const handleInstagram = () => {
-
-    }
     return (
-        <div className='footerContainer'>
-            <div> &copy; Stefan Adamski </div>
-            <div className='socialMedia'>
-                <div className='facebook' onClick={handleFacebook}> </div>
-                <div className='instagram' onClick={handleInstagram}> </div>
-            </div>
+        <div className='container_footer'>
+            <div className='copy'> &copy; 2021 GiveAway project by Stefan Adamski </div>
+            <a className='facebook' href="https://www.facebook.com"> </a>
+            <a className='instagram' href="https://www.instagram.com"> </a>
         </div>
     );
 };

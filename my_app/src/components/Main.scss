@@ -1,4 +1,4 @@
-@import 'scssSettings/colors', 'scssSettings/fonts', 'scssSettings/reset', 'scssSettings/mixins';
+@import '../sass/colors', '../sass/fonts', '../sass/reset', '../sass/mixins';
 
 * {
   box-sizing: border-box;
@@ -25,52 +25,70 @@ body {
   font-family: $font-base;
 }
 
-.giveAwayButton {
-  font-size: 30px;
+.give_away_button {
+  font-size: 18px;
   font-family: $font-alt;
   color: $color5;
-  width: 280px;
-  height: 100px;
+  width: 230px;
+  height: 50px;
   background: transparent;
-  border: 1px solid $color5;
+  border: 2px solid $color3;
+  border-radius: 3px;
   margin: 25px;
+}
+
+.give_away_button:hover {
+  box-shadow: 0 0 4px $color3;
 }
 
 .decoration {
   background-image: url("../assets/Decoration.svg");
   background-size: cover;
   background-position: center;
-  width: 253px;
-  height: 33px;
+  width: 180px;
+  height: 28px;
   margin: 15px;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   margin: 20px;
 }
 
-.inputStyle, .textareaStyle {
+.input_style, .textarea_style {
   font-family: $font-alt;
-  background: transparent;
+  background: rgba(250, 214, 72, 0.3);
   outline: none;
   border: none;
-  border-bottom: 2px solid $color5;
-  width: 200px;
+  box-shadow: 0 0 2px $color3;
+  width: 400px;
   margin: 15px;
-
   padding: 10px;
 }
 
-.textareaStyle {
-  width: 410px;
+.textarea_style {
+  width: 400px;
 }
 
-.redError {
-  font-size: 15px;
-  color: red;
+.red_error {
+  font-size: 14px;
+  color: darkorange;
   width: 100%;
+  padding: 5px;
+  margin: 5px;
 }
 
-
-
+.the_other_button {
+  font-size: 14px;
+  font-family: $font-alt;
+  color: $color5;
+  width: 160px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid $color5;
+  border-radius: 3px;
+  margin: 15px;
+}
+.the_other_button:hover {
+  box-shadow: 0 0 2px $color5;
+}

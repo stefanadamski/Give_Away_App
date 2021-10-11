@@ -18,7 +18,7 @@ const AllSteps = () => {
     }
     return (
         <div>
-            <div className='formSteps'>
+            <div className='form_steps'>
                 {formStep === 1 && (<Step1/>)}
                 {formStep === 2 && (<Step2/>)}
                 {formStep === 3 && (<Step3/>)}
@@ -28,11 +28,11 @@ const AllSteps = () => {
             </div>
             <div>
                 {formStep > 1 &&
-                (<button className='stepButton' onClick={goToPreviousStep}> Wstecz </button>)}
+                (<button className='step_button' onClick={goToPreviousStep}> Wstecz </button>)}
                 {formStep < 5 &&
-                (<button className='stepButton' onClick={completeFormStep}> Dalej </button>)}
+                (<button className='step_button' onClick={completeFormStep}> Dalej </button>)}
                 {formStep === 5 &&
-                (<button className='stepButton' onClick={completeFormStep}> Potwierdzam </button>)}
+                (<button className='step_button' onClick={completeFormStep}> Potwierdzam </button>)}
             </div>
         </div>
     );

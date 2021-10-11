@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./contact.scss"
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -47,50 +48,47 @@ const Contact = () => {
     }
     return (
         <div className='contact' id='contact'>
-            <div className='contactDiv'>
                 <h1> Skontaktuj się z nami </h1>
                 <div className='decoration'> </div>
                     {confirmation === true && (<>
-                    <div className='greenConfirmation'> Wiadomość została wysłana! Wkrótce się skontaktujemy! </div>
+                    <div className='green_confirmation'> Wiadomość została wysłana! Wkrótce się skontaktujemy! </div>
                     </>)}
                 <div>
-                    <form className="contactForm" onSubmit={(e) => handleSubmit(e)}>
-                        <div className='firstRowContact'>
-                            <div className='contactDetails'>
-                                <label>Wpisz swoje imię</label>
-                                <input type="text"
-                                       className="inputStyle"
-                                       value={name}
-                                       placeholder="Stefan"
-                                       onChange={(e) => setName(e.target.value)}
-                                />
-                                {nameError === true && (<div className='redError'> Podane imię jest nieprawidłowe! </div>)}
-                            </div>
-                            <div className='contactDetails'>
-                                <label>Wpisz swój e-mail</label>
-                                <input type="email"
-                                       className="inputStyle"
-                                       value={email}
-                                       placeholder="krzysztof@nowak.com"
-                                       onChange={(e) => setEmail(e.target.value)}
-                                />
-                                {emailError === true && (<> <div className='redError'> Podany e-mail jest nieprawidłowy! </div> </>)}
-                            </div>
+                    <form className="contact_form" onSubmit={(e) => handleSubmit(e)}>
+                        <div className='contact_details'>
+                            <label>Wpisz swoje imię</label>
+                            <input type="text"
+                                   className="input_style"
+                                   value={name}
+                                   placeholder="Stefan"
+                                   onChange={(e) => setName(e.target.value)}
+                            />
+                            {nameError === true && (<div className='red_error'> Podane imię jest nieprawidłowe! </div>)}
+                        </div>
+                        <div className='contact_details'>
+                            <label>Wpisz swój e-mail</label>
+                            <input type="email"
+                                   className="input_style"
+                                   value={email}
+                                   placeholder="krzysztof@nowak.com"
+                                   onChange={(e) => setEmail(e.target.value)}
+                            />
+                            {emailError === true && (<> <div className='red_error'> Podany e-mail jest nieprawidłowy! </div> </>)}
                         </div>
                         <label>Wpisz swoją wiadomość</label>
                         <textarea
                             placeholder="Lorem ipsum dolor sit amet."
-                            className="textareaStyle"
+                            className="textarea_style"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />
-                        {messageError === true && (<> <div className='redError'>
+                        {messageError === true && (<> <div className='red_error'>
                             Wiadomość musi mieć conajmniej 120 znaków!
                         </div> </>)}
-                        <button className='giveAwayButton'> WYŚLIJ </button>
+                        <button className='give_away_button'> WYŚLIJ </button>
                     </form>
                 </div>
-            </div>
+            <Footer/>
         </div>
     );
 };

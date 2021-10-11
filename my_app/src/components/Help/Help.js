@@ -16,17 +16,17 @@ const Help = () => {
         setPage(3);
     }
     return (
-        <div className='paginatorContainer' id='help'>
-            <div className='paginatorOptions'>
-                <button className='giveAwayButton' onClick={handleFoundations}> Fundacjom </button>
-                <button className='giveAwayButton' onClick={handleOrganizations}> Organizacjom pozarządowym </button>
-                <button className='giveAwayButton' onClick={handleLocal}> Lokalnym zbiórkom </button>
+        <div className='paginator_container' id='help'>
+            <div className='paginator_options'>
+                <button className='give_away_button' onClick={handleFoundations}> FUNDACJOM </button>
+                <button className='give_away_button' onClick={handleOrganizations}> ORGANIZACJOM </button>
+                <button className='give_away_button' onClick={handleLocal}> LOKALNYM ZBIÓRKOM </button>
             </div>
             <div className='description'> W naszej bazie znajdziesz listę zweryfikowanych
-                Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu
+                Fundacji, z którymi współpracujemy.<br/> Możesz sprawdzić czym się zajmują, komu
                 pomagają i czego potrzebują.</div>
             <div className='decoration'> </div>
-            <div className='formSteps'>
+            <div>
                 {page === 1 && (<Page1/>)}
                 {page === 2 && (<Page2/>)}
                 {page === 3 && (<Page3/>)}
