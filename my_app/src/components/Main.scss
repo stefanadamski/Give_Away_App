@@ -31,7 +31,7 @@ body {
   color: $color5;
   width: 230px;
   height: 50px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.5);
   border: 2px solid $color3;
   border-radius: 3px;
   margin: 25px;
@@ -57,13 +57,17 @@ h1 {
 
 .input_style, .textarea_style {
   font-family: $font-alt;
-  background: rgba(250, 214, 72, 0.3);
-  outline: none;
-  border: none;
-  box-shadow: 0 0 2px $color3;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid $color3;
+  box-shadow: 0 0 1px $color3;
+  border-radius: 3px;
   width: 400px;
   margin: 15px;
   padding: 10px;
+}
+
+.input_style:focus, .textarea_style:focus {
+  box-shadow: 0 0 4px $color3;
 }
 
 .textarea_style {
@@ -85,7 +89,7 @@ h1 {
   width: 160px;
   height: 40px;
   background: transparent;
-  border: 1px solid $color5;
+  border: 2px solid $color5;
   border-radius: 3px;
   margin: 15px;
 }

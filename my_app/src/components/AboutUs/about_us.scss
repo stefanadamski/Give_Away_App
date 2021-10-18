@@ -2,31 +2,41 @@
 
 .about_container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("People_2.png");
+  background-image: url("People@2x.png");
   background-position: center;
   background-size: cover;
   padding: 80px;
-  h1 {
-    color: $color3;
-  }
-  .about_description {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 15px;
-  }
-  .about_sign {
+  height: 100vh;
+  .about_text {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 3px solid $color3;
     display: flex;
-    position: relative;
-    background-image: url("Signature.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 20px;
-    width: 150px;
-    height: 112px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 30px;
+    h1 {
+      color: $color3;
+    }
+    .about_description {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 15px;
+    }
+    .about_sign {
+      display: flex;
+      position: relative;
+      background-image: url("Signature.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 20px;
+      width: 150px;
+      height: 112px;
+    }
   }
 }
 

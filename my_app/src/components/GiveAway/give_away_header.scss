@@ -1,0 +1,29 @@
+@import '../Main';
+
+.main_container {
+  background-image: url("Header-Form-Background@2x.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  .give_away_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+    .header_content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 200px;
+      h1 {
+        font-size: 26px;
+      }
+      .header_buttons {
+        display: flex;
+      }
+    }
+  }
+}

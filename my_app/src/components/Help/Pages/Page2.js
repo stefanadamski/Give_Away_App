@@ -11,13 +11,17 @@ const Page2 = () => {
         setNonGovPage(2);
     }
     return (<>
-            <div className='formSteps'>
-                {nonGovPage === 1 && (<PagesTemplate title='Organizacje' description='description' elements='elements'/>)}
-                {nonGovPage === 2 && (<PagesTemplate title='Organizacje2' description='description' elements='elements'/>)}
+            <div>
+                {nonGovPage === 1 && (<PagesTemplate title='Organizacja w Krakowie'
+                                                     description='Lorem ipsum dolor sit amet'
+                                                     elements='Consectetur adipisc Pellentesque'/>)}
+                {nonGovPage === 2 && (<PagesTemplate title='Organizacja w Warszawie'
+                                                     description='Lorem ipsum dolor sit amet'
+                                                     elements='Consectetur adipisc Pellentesque'/>)}
             </div>
             <div>
-                <button onClick={handleFirstPage}> 1 </button>
-                <button onClick={handleSecondPage}> 2 </button>
+                <button className='the_other_button' onClick={handleFirstPage}> 1 </button>
+                <button className='the_other_button' onClick={handleSecondPage}> 2 </button>
             </div>
         </>
     );

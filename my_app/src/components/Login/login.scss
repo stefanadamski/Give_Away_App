@@ -6,10 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 70px;
+  margin: 50px;
   .login_form {
     background-color: $color1;
-    width: 400px;
+    border: 1px solid $color3;
+    box-shadow: 0 0 2px $color3;
     height: 510px;
     .login_inputs {
       display: flex;

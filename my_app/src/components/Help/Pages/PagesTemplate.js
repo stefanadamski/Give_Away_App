@@ -1,28 +1,29 @@
 import React from 'react';
+import '../help.scss'
 
 const PagesTemplate = ({title, description, elements}) => {
     return (
         <div>
             <div>
                 <div>
-                    <h1> {title} </h1>
-                    <p> {description}</p>
+                    <h1 className='template_header'> {title} </h1>
+                    <p className='template_text'> {description} </p>
                 </div>
-                <p> {elements}</p>
+                <p className='template_elements'> {elements} </p>
             </div>
             <div>
                 <div>
-                    <h1> {title} </h1>
-                    <p> {description}</p>
+                    <h1 className='template_header'> {title} </h1>
+                    <p className='template_text'> {description} </p>
                 </div>
-                <p> {elements}</p>
+                <p className='template_elements'> {elements} </p>
             </div>
             <div>
                 <div>
-                    <h1> {title} </h1>
-                    <p> {description}</p>
+                    <h1 className='template_header'> {title} </h1>
+                    <p className='template_text'> {description} </p>
                 </div>
-                <p> {elements}</p>
+                <p className='template_elements'> {elements} </p>
             </div>
         </div>
     );

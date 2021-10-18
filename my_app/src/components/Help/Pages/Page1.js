@@ -14,10 +14,17 @@ const Page1 = () => {
         setFoundationPage(3);
     }
     return (<>
-            <div className='formSteps'>
-                {foundationPage === 1 && (<PagesTemplate title='Fundacje' description='description' elements='elements'/>)}
-                {foundationPage === 2 && (<PagesTemplate title='Fundacje2' description='description' elements='elements'/>)}
-                {foundationPage === 3 && (<PagesTemplate title='Fundacje3' description='description' elements='elements'/>)}
+            <div>
+                {foundationPage === 1 && (<PagesTemplate title='Fundacja Krakowska'
+                                                         description='Lorem ipsum dolor sit amet'
+                                                         elements='Consectetur adipisc Pellentesque'
+                                                                                                    />)}
+                {foundationPage === 2 && (<PagesTemplate title='Fundacja Warszawska'
+                                                         description='Lorem ipsum dolor sit amet'
+                                                         elements='Consectetur adipisc Pellentesque'/>)}
+                {foundationPage === 3 && (<PagesTemplate title='Fundacja Wrocławska'
+                                                         description='Lorem ipsum dolor sit amet'
+                                                         elements='Consectetur adipisc Pellentesque'/>)}
             </div>
             <div>
                 <button onClick={handleFirstPage} className='the_other_button'> 1 </button>

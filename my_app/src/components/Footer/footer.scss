@@ -4,10 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
-  margin: 20px;
-  padding: 20px;
-  height: 100px;
+  background: rgb(250, 214, 72);
   .copy {
     font-size: 14px;
     margin: 10px;
@@ -18,7 +15,6 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      filter: invert(97%) sepia(45%) saturate(3909%) hue-rotate(321deg) brightness(105%) contrast(96%);
       width: 20px;
       height: 20px;
       margin: 10px;

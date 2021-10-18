@@ -1,31 +1,33 @@
 @import '../Main';
 
-.header_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 500px;
-  width: 100%;
-  background-image: url("Home-Hero2.png");
+.main_header_container {
+  background-image: url("Home-Hero-Image-Long.jpg");
   background-size: contain;
-  background-position: left;
+  background-position: bottom;
   background-repeat: no-repeat;
-  .header {
+  .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
 
-    h1 {
-      font-size: 26px;
-    }
-    .header_buttons {
+    .header_content {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 200px;
+      h1 {
+        font-size: 26px;
+      }
+      .header_buttons {
+        display: flex;
+      }
     }
   }
 }
-
-
-
-
-
 
 
 

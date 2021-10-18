@@ -4,9 +4,12 @@ import PagesTemplate from "./PagesTemplate";
 
 const Page3 = () => {
     return (<>
-            <PagesTemplate title='Lokalne zbiorki' description='description' elements='elements'/>
+            <PagesTemplate title='Lokalne zbiorki'
+                           description='Lorem ipsum dolor sit amet'
+                           elements='Consectetur adipisc Pellentesque'/>
         </>
     );
 };
 
 export default Page3;
+
